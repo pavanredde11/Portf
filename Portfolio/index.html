@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/cf3d9914ed.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+         <div class="container">
+            <nav>
+                <img src="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#services">Services</a></li> -->
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Desginer</p>
+                <h1>Hi,Im <span>Pavan</span> <br> I'm a Frontend Developer.</h1>
+            </div>
+         </div>
+    </div>
+    <!-- ----------------------------about---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/UKSXE4900 (4).JPG">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>B.Tech in Mechanical Engineering. Interested In Frontend Web Development,Learned Java Script & React Js.Can work will under pressure and make the best in situation. Having very good interpersonal and communications skills.(Hire Me)</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link"  onclick="opentab('skills')" >Skills</p>
+                        <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li> <span>HTML,CSS3</span><br> Good Hands on experience in using Styled Components with CSS Media Queries to build a responsive website and 
+                                Experience with CSS3. </li>
+                            <li> <span>Java Script,React JS</span><br> <li>Strong Understanding of JavaScript(ES5/ES6) features - Arrow functions, Promises, Async and Await, Destructuring 
+                                using Objects and Arrays, Closures, WebAPIs and Prototypes.</li>
+                            <li>Strong understanding of JavaScript library like ReactJS in developing reusable components using Class Components</li>
+                        <li>Functional components - Hooks with JSX templating and ES6 syntax. </li></li>
+                            <!-- <li> <span>SQL</span><br> <li>Good knowledge in DDL, DML, DCL, DTL, DQL.</li>
+                                                      <li>Good knowledge in grouping and functions.</li>
+                                                      <li>Good knowledge on writing sub-queries</li>
+                                                      <li>Good knowledge in joins and its types.</li>
+                                                      <li>Good knowledge in like operator.</li>
+                                                      <li>Good knowledge in single row functions and multi row functions.</li> </li> -->
+                        </ul>
+                    </div>
+                    <!-- <div class="tab-contents" id="experience">
+                        <ul>
+                            <li> <span>2021 - Current</span><br> UI/UX Design Training At Et INstiute</li>
+                            <li> <span>2019 - 2021</span><br> Web app development</li>
+                            <li> <span>2017 - 2019</span><br> Building Android/Ios Apps</li>
+                        </ul>
+                    </div> -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li> <span>2014-2022</span><br> B.tech(Mechanical Engineering) - 56.52%</li>
+                            <li> <span>2014</span><br> Board Of Intermediate Education A.P - 58%</li>
+                            <li> <span>2012</span><br> Board Of Secondary Education A.P - 7.2 CPGA </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ---------------services---------------- -->
+    <!-- <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Desgin</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia deserunt aut totam architecto delectus reprehenderit ducimus dolores facere sapiente eius!</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia deserunt aut totam architecto delectus reprehenderit ducimus dolores facere sapiente eius!</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia deserunt aut totam architecto delectus reprehenderit ducimus dolores facere sapiente eius!</p>
+                    <a href="#">Learn More</a>
+                </div>
+                
+
+            </div>
+        </div>
+    </div> -->
+<!-- -------------projects--------------->
+<div id="projects" >
+    <div class="container">
+   <h1 class="sub-title">Projects</h1>
+   <div class="work-list">
+    <div class="work">
+        <img src="./images/To do.jpg" >
+        <div class="layer">
+            <h3>To-Do List</h3>
+            <p>To Do List is a web application built with JavaScript and React JS that allows users to create and manage tasks. The app provides a clean and user-friendly interface for users to add, edit, and delete tasks, as well as mark them as completed.
+                Features: 
+                 - Create new tasks with a title and description
+                 - Edit existing tasks to modify their title and description
+                 - Delete tasks that are no longer needed
+                 - Mark tasks as completed to keep track of progress
+                 - Filter tasks by completion status
+                 - Sort tasks by due date, priority, or title
+                The application uses local storage to store tasks, so users can close the app and return later without losing their progress. The user interface is designed to be responsive and work seamlessly across different devices.
+                This project demonstrates proficiency in JavaScript and React JS, as well as knowledge of web development best practices, including responsive design and local storage.
+                </p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+    </div>
+    <div class="work">
+        <img src="./images/news website.jfif" >
+        <div class="layer">
+            <h3>NEWS Website</h3>
+            <p> Created a basic HTML document with a header, main content section, and footer.
+                Added CSS styles to create an attractive and responsive layout.
+                Designed the layout and user interface of the website using HTML and CSS.
+                Used JavaScript to add interactivity to the website and to retrieve and display the latest news.
+                Used an API to fetch the news articles from various sources and display them on the website.
+                Added features such as search, filtering, and sorting to make it easy for users to find the news they are interested in.
+                   -   search bar to allow users to search for specific keywords or topics.
+                  -   filtering options to allow users to filter articles by source, category, or date range.
+                  -   sorting options to allow users to sort articles by relevance, date, or popularity.
+                Added event listeners to buttons and other interactive elements to make the website dynamic.
+                Used React to retrieve data from the news API and display it on the website.
+                Used React to handle errors and edge cases, such as when the API is unavailable or returns an empty response.
+                We brought the news data from NEWS API website and used postman to test whether the news api is working or no
+                Register for an API key and use it to make API requests.
+                Use JavaScript to parse the JSON response and display the articles on the website.
+                </p>
+            <a href="../Javascript projects/javascript reactjs.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+    </div>
+    <div class="work">
+        <img src="./images/e commerce.png">
+        <div class="layer">
+            <h3>E-commerce Website</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, suscipit.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+    </div>
+   </div>
+   <a href="#" class="btn">See More</a>
+    </div>
+</div>
+ <!-- -------------contact------ -->
+<div id="contact">
+<div class="container">
+    <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p> <i class="fa-solid fa-paper-plane"></i> pavanredde11@gmail.com</p>
+            <p> <i class="fa-solid fa-phone"></i> 8499912145 </p>
+            <div class="socail-icons">
+                <a href="https://www.linkedin.com/in/pavan-kumar-reddy-60b87a159/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/pavanredde11"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="./images/Pavan Reddy.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message"rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p>Copyright &copy; All Rights Reserved || Y Pavan Kumar Reddy || Made With  <i class="fa-solid fa-heart"></i> </p>
+</div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyQPW7vDpVrAG1ExpocLs4LBdnzxvzn1Gf0A-lyE0aD1H1-NwiD79wxsM5nIKyOrg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
